@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   display: block;
@@ -46,9 +46,10 @@ body {
 
 
 section {
-  padding: 100px 20px;
-  min-height: 100vh;
+  padding: 10px 20px;
   color: black;
+  display: block;
+  width: 800px;
 }
 
 h1 {
@@ -75,6 +76,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#leader-component {
+  padding-top: 80px;
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -89,18 +94,11 @@ button:focus-visible {
 }
 
 #navbar_content {
-  width: 600px;
+  width: 800px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-.section {
-  display: block;
-  width: 600px;
-  min-height: 100vh;
-
 }
 
 .section-container {
@@ -122,6 +120,23 @@ footer {
   background-color: #FFFFF4;
   padding: 20px;
   text-align: center;
+}
+
+
+button {
+  background-color: #008000; /* default green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Optional: hover/focus styles */
+button:hover {
+  opacity: 0.9;
 }
 
 /* @media (prefers-color-scheme: light) {
