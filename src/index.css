@@ -81,6 +81,7 @@ section {
 }
 
 #how-section-0 {
+  flex-direction:  column;
   width: 80%;
 }
 
@@ -89,12 +90,21 @@ section {
   flex-grow: row;
 }
 
-#how-section-1-1 {
-    width: 80%;
+.how-it-works-sub-section {
+  display: flex;
+  justify-content: space-between;
 }
 
-#how-it-works-image {
+#how-section-1-1 {
+    width: 60%;
+}
+
+#how-it-works-image-1 {
   width: 20%;
+}
+
+#how-it-works-image-2 {
+  width: 90%;
 }
 
 h1 {
