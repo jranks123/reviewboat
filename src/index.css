@@ -50,7 +50,7 @@ section {
   color: black;
   display: flex;
   width: 800px;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   text-align: center;
 }
@@ -81,8 +81,11 @@ section {
 }
 
 #how-section-0 {
-  flex-direction:  column;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   width: 80%;
+  margin: 0;
 }
 
 #how-section-1 {
@@ -91,8 +94,12 @@ section {
 }
 
 .how-it-works-sub-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 #how-section-1-1 {
@@ -103,8 +110,24 @@ section {
   width: 20%;
 }
 
+#how-section-2-1 {
+  width: 50%;
+}
+
+#how-section-3-1 {
+  width: 50%;
+}
+
 #how-it-works-image-2 {
-  width: 90%;
+  width: 40%;
+  height: auto;
+  flex-shrink: 0
+}
+
+#how-it-works-image-3 {
+  width: 40%;
+  height: auto;
+  flex-shrink: 0
 }
 
 h1 {
@@ -133,6 +156,7 @@ button:focus-visible {
 
 #leader-component {
   padding-top: 80px;
+  align-items: center;
 }
 
 #navbar {
