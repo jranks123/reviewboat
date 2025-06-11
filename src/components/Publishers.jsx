@@ -4,7 +4,7 @@ export default function Publishers({ id, title, backgroundColor, componentConten
       <section id={id} class="section" style={{ backgroundColor }}>
         <div class="publisher-retailer-leader">
           <h2>For Publishers</h2>
-          <p>Stop losing customers to Google. Reviewboat keeps high-intent shoppers on your site by surfacing reviews exactly when they need them—on your product pages.</p>
+          <p>Reviewboat turns your expert content into a revenue stream, without you having to lift a finger. Get paid a monthly fee based on the number of reviews you contribute.</p>
         </div>
         <div class="icon-section">
           <div class="icon-subsection">
