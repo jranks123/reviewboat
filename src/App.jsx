@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 import Navbar from './components/Navbar';
 import LeaderComponent from './components/LeaderComponent';
 import QuoteComponent from './components/QuoteComponent';
