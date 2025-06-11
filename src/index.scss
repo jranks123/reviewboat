@@ -79,7 +79,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 9999px;
-  display: none; 
+  display: none;
 }
 button:hover {
   background-color: #e0773e;
@@ -212,6 +212,7 @@ footer {
      0.5px -0.5px 0 black,
     -0.5px  0.5px 0 black,
      0.5px  0.5px 0 black;
+  text-align: center;
 }
 
 /* how it works */
