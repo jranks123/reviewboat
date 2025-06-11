@@ -45,16 +45,45 @@ body {
 }
 
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* button */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* section */
+
 section {
   padding: 10px 20px;
+  margin-bottom: 20px;
   color: black;
   display: flex;
   width: 800px;
   align-items: flex-start;
   flex-direction: column;
   text-align: center;
+  scroll-margin-top: 60px;
 }
-
 
 .extra-big-text {
   font-size: 2rem;
@@ -68,16 +97,38 @@ section {
   font-size: 0.5rem;
 }
 
+/* footer */
+
+footer {
+  background-color: #FFFFF4;
+  color: black;
+  text-align: left;
+}
+
+
+/* quote component */
+
 #quote-component p {
   margin: 0;
+}
+
+#quote-component {
+  align-items: center;
+  margin-bottom: 0px;
 }
 
 #leader-component h2 {
   margin: 0;
 }
 
+/* how it works */
+
 #how-it-works  p, h2 {
     text-align: left;
+}
+
+#how-it-works h2 {
+  margin-bottom: 0px;
 }
 
 #how-section-0 {
@@ -130,34 +181,13 @@ section {
   flex-shrink: 0
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 #leader-component {
   padding-top: 80px;
   align-items: center;
 }
+
+/* nav bar */
 
 #navbar {
   position: fixed;
@@ -170,6 +200,7 @@ button:focus-visible {
   padding: 10px 20px;
   z-index: 1000;
   color: white;
+  border-bottom: 1px solid black;
 }
 
 #navbar_content {
@@ -253,5 +284,5 @@ button:hover {
 }
 
 .icon-subsection {
-  margin: 0px 10px 20px 10px;
+  margin: 0px 10px 0px 10px;
 }

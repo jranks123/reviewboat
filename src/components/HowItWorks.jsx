@@ -2,7 +2,7 @@ export default function HowItWorks({ id, title, backgroundColor, componentConten
   return (
     <div class="section-container" style={{ backgroundColor }}>
       <section id={id} class="section" style={{ backgroundColor }}>
-        <div>
+        <div class="how-it-works-section-container">
           <div class="how-it-works-sub-section" id="how-section-0">
             <h2>How it works</h2>
             <p>Reviewboat helps ecommerce retailers boost conversion rates by embedding expert reviews directly into product pages. We license high-quality review content from trusted publishers—tech journalists, product testers, and niche experts—and automatically match it to the relevant products on site.</p>
