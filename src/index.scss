@@ -363,6 +363,8 @@ footer {
   }
 }
 
+
+
 /* Publishers */
 
 #publishers {
@@ -394,10 +396,10 @@ footer {
 .icon-section h3 {
   text-align: left;
   font-size: 1em;
+  margin-bottom: 0;
+  margin-top: -8px;
   @media (max-width: 800px) {
     font-size: 1.3em;
-    margin-bottom: 0;
-    margin-top: 0;
   }
 }
 
