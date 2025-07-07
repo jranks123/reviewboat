@@ -76,15 +76,15 @@ export default function ContactUs({ id, onClose }) {
           <p> Fill in your details and our team will get in touch to organise a demo </p>
           <form id="contact-form">
               <p className="input-label"> First Name </p> 
-              <input name="first_name"  required />
+              <input name="first_name"  autoComplete="given-name" required />
               <p className="input-label"> Second Name </p> 
-              <input name="second_name"   />
+              <input name="second_name" autoComplete="family-name"  />
               <p className="input-label"> Company Name </p> 
-              <input name="company_name" required />
+              <input name="company_name" autoComplete="organization" required />
               <p className="input-label"> Company Email </p> 
-              <input name="company_email" type="email" required />
+              <input name="company_email" type="email" autoComplete="email" required />
               <p className="input-label"> Phone Number</p> 
-              <input name="phone_number"  />
+              <input name="phone_number" autoComplete="tel" required />
               <button
                 id="request-a-demo-button"
                 type="submit"
