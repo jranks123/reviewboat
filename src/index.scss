@@ -54,7 +54,7 @@ h1 {
 }
 
 .extra-big-text {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .standard-text {
@@ -68,18 +68,23 @@ h1 {
 /* button */
 
 button {
+  display: flex;
+  align-items: center;    
+  gap: 8px;               
+  justify-content: center;
   border-radius: 8px;
   border: 1px solid black;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: inherit;
   background-color: #F98948;
   color: black;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 9999px;
-  display: none;
+  border-radius: 9999px; 
+  margin-top: 30px; 
+  margin-bottom: 20px;
 }
 button:hover {
   background-color: #e0773e;
@@ -195,15 +200,144 @@ footer {
 /* quote component */
 
 #quote-component p {
-  margin: 0;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
+#quote-component .standard-text {
+  font-size: 1rem;
+}
+
+#quote-component .standard-text {
+  font-size: 1rem;
+}
+
 
 #quote-component {
   align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* contact us */ 
+
+#request-a-demo-button {
+  font-size: 1em;
+  width: 250px;
+}
+
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid black;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: auto;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.contact-us-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+}
+
+#contact-us-component h2 {
+  margin: 0;
+  color: green;
+  text-shadow:
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px  0.5px 0 black,
+     0.5px  0.5px 0 black;
+  text-align: center;
+}
+
+#contact-us-component.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.modal-haze {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 0;
+}
+
+.modal-form {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  background-color: #FFFFF4;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+#contact-form { 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 250px;
+}
+
+#contact-form input {
+ 
+  background-color: white;
+  border: 1px black solid ;
+  margin-bottom: 0px;
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  
+  border-radius: 6px; /* ← Adjust this value for more or less rounding */
+  padding: 0.5rem;  
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+#contact-us-component p {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+#contact-us-component #contact-form p {
+  font-size: 0.8em;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
 /* leader */
+
+#leader-component #leader-tagline {
+  margin-top: 30px;
+}
 
 .leader-subheading {
   display: flex;
@@ -234,6 +368,10 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   align-items: left;
+}
+
+#arrow-right { 
+  height: 30px;
 }
 
 /* how it works */
@@ -351,15 +489,17 @@ footer {
 
 .publisher-retailer-leader {
   text-align: left;
+  margin-bottom: 30px;
   @media (max-width: 800px) {
     margin-bottom: 20px;
   }
 }
 
 .publisher-retailer-leader p {
+  font-size: 0.9rem;
   @media (max-width: 800px) {
-      font-size: 0.8em;
-      font-weight: bold;
+      font-size: 1em;
+      font-weight: normal;
   }
 }
 
@@ -378,14 +518,14 @@ footer {
 .icon-section {
   display: flex;
   flex-direction: row;
+  
   @media (max-width: 800px) {
       flex-direction: column;
   }
 }
 
 .icon-section p {
-  font-size: 0.8em;
-  font-weight: bold;
+  font-size: 1em;
   text-align: left;
   @media (max-width: 800px) {
     margin-bottom: 40px;

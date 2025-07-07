@@ -1,7 +1,7 @@
 export default function Section({ id, title, backgroundColor }) {
   return (
-    <div class="section-container" style={{ backgroundColor }}>
-      <section id={id} class="section" style={{ backgroundColor }}>
+    <div className="section-container" style={{ backgroundColor }}>
+      <section id={id} className="section" style={{ backgroundColor }}>
         {{ children }}
       </section>
     </div>
