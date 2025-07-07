@@ -226,6 +226,11 @@ footer {
 #request-a-demo-button {
   font-size: 1em;
   width: 250px;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    width: 75%;
+    font-size: 0.8em;
+  }
 }
 
 
