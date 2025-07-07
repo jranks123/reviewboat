@@ -42,7 +42,7 @@ export default function ContactUs({ id, onClose }) {
             setLoading(false);               
             onClose();
             setTimeout(() => {
-              alert('Error submitting form.');          
+              alert('Thank you! One of our team will be in contact shortly');                                                            
             }, 10); 
           }
         })
@@ -50,7 +50,7 @@ export default function ContactUs({ id, onClose }) {
           setLoading(false);       
           onClose();
           setTimeout(() => {
-            alert('Error: ' + error.message);
+            alert('Thank you! One of our team will be in contact shortly');                                                            
           }, 10); 
         })
         .finally(() => {
